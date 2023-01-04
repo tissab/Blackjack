@@ -1,0 +1,34 @@
+-- Compteur de valeur d'une main au jeu du Blackjack --
+
+Le Blackjack est un jeu de hasard très populaire dans les Casinos. Le but de ce jeu de cartes consiste à faire un meilleur score que la banque, sans dépasser 21.
+Le but de ce Kata est d'implémenter les règles de calcul de la valeur d'une main. Il n'est pas question ici de simuler la présence de plusieurs joueurs ou d'un croupier.
+
+Règles :
+Si vous constatez que le code n'a pas la qualité voulue ou n'est pas adapté aux besoins, vous pouvez (devez) le modifier. Ceci sera pris en compte dans l'évalutation
+[étape 1]
+- Une main est initialement consitutée de deux cartes.
+- les cartes représentées par un chiffre (de 2 à 10) valent leur chiffre en points.
+- Les figures (J, Q et K) valent 10 points
+- L'As vaut 11 points.
+- Merci d'implémenter la propriété "Points" de la classe Card qui calcule la valeur d'une carte
+
+[étape 2]
+- On peut rajouter autant de cartes que l'on souhaite dans une main, une par une.
+- La valeur en points d'une main est égale à la somme des points de chacune de ses cartes.
+- Merci d'implémenter:
+      	- La méthode "AddCard" de la classe "Hand"
+	  	- La propriété "Points" de la classe "Hand", qui renvoie la valeur d'une main
+
+[étape 3]
+- Si la main a une valeur strictement égale à 21 avec deux cartes (A + 10/J/Q/K), c'est un Blackjack.
+- Si la main a une valeur supérieure à 21, elle est perdue (busted).
+- Merci d'implémenter :
+		- La propriété "IsBlackJack" de la classe Hand qui permet de savoir si une main est ou pas un blackjack 
+		- La propriété "IsBusted" de la classe Hand qui permet de savoir si une main est perdue  
+
+[étape 4]
+- Si la main a une valeur supérieure à 21 alors qu'elle a encore As, on considère que l'As ne vaut plus qu'un point (refaire le calcul tant qu'il reste des As et que le score dépasse 21).
+			
+Exemple: Une main qui contient  A et un 6 vaut 17 points. On ajoute un 5 dans la main, la main passe à 12 points (A = 1 + 6 + 5)
+
+Pour réussir cette étape, il est necessaire que les tests des fichiers Step1.cs, Step2.cs, Step3.cs et Step4.cs réussissent

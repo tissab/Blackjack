@@ -1,0 +1,13 @@
+-- Compteur de valeur d'une main au jeu du Blackjack --
+
+Le Blackjack est un jeu de hasard très populaire dans les Casinos. Le but de ce jeu de cartes consiste à faire un meilleur score que la banque, sans dépasser 21.
+Le but de ce Kata est d'implémenter les règles de calcul de la valeur d'une main. Il n'est pas question ici de simuler la présence de plusieurs joueurs ou d'un croupier.
+
+Règles :
+[étape 1]
+- Une main est initialement consitutée de deux cartes.
+- les cartes représentées par un chiffre (de 2 à 10) valent leur chiffre en points.
+- Les figures (J, Q et K) valent 10 points
+- L'As vaut 11 points.
+
+Pour réussir cette étape, il est necessaire que les tests du fichier Step1.cs réussissent
